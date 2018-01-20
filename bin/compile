@@ -24,3 +24,6 @@ BUILD_DIR=$1
 cd "$BUILD_DIR"
 
 sub_env "$BIN_DIR/steps/compilescss"
+
+# Need to run this again with the .css files we just spat out.
+sub_env "$BIN_DIR/steps/collectstatic"
